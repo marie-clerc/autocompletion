@@ -1,0 +1,70 @@
+*, body, html, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../image/grand-palais-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+main {
+    width: 100%;
+    max-width: 768px;
+}
+
+.flex {
+
+}
+
+.card {
+    background: snow;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.card h1 {
+    text-align: center;
+}
+
+.card form {
+    width: 100%;
+}
+.card form input {
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    background-color: rgba(196, 196, 196, 0.8);
+    gap: 1em;
+}
+
+.list > * {
+    width: 100%;
+    list-style: inside square;
+}
+
+/** list on smaller screen ***/
+@media screen and (max-width: 500px) {
+    .list {
+        display: block;
+    }
+}
+
+footer {
+    background-color: snow;
+    padding: 5px 3px;
+    border-radius: 5px;
+}
+
+.resultatsajax:hover {
+    background-color: #ddd;
+    padding-bottom: -10px;
+}
