@@ -37,6 +37,15 @@ if (isset($_GET['search'])){
 </head>
 
 <body>
+<header>
+    <h2><a href="index.php">Le Musée</a></h2>
+    <div class="input-group rounded recherchetool">
+        <form action="recherche.php" method="get">
+            <input id="searchart" name="search" class="form-control input-lg" placeholder="Rechercher..." autofocus>
+            <div id="resultats" style="position: absolute"></div>
+        </form>
+    </div>
+</header>
 <main>
     <h1>Résultats de recherche pour : "<?=$info?>"</h1>
     <section class="flex">
@@ -64,7 +73,8 @@ if (isset($_GET['search'])){
 <footer>
     Marie CLERC
 </footer>
-</body>
-
 <!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+</body>
 </html>

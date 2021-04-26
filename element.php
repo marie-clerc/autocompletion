@@ -35,6 +35,15 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 </head>
 
 <body>
+<header>
+    <h2><a href="index.php">Le Musée</a></h2>
+    <div class="input-group rounded recherchetool">
+        <form action="recherche.php" method="get">
+            <input id="searchart" name="search" class="form-control input-lg" placeholder="Rechercher..." autofocus>
+            <div id="resultats" style="position: absolute"></div>
+        </form>
+    </div>
+</header>
 <main>
     <h1><?= $oeuvre['nom'] ?></h1>
         <div class="grid-container">
@@ -60,9 +69,8 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 <footer>
     Marie CLERC
 </footer>
-</body>
-
 <!-- script -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-<script src="script/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+</body>
 </html>

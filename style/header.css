@@ -1,0 +1,49 @@
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: snow;
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+    padding: 0 5px;
+}
+
+header h2 {
+    float: left;
+    width: 50%;
+}
+header h2 a {
+    color: black;
+}
+header h2 a:hover {
+    color: black;
+}
+
+.recherchetool {
+    float: right;
+    width: 50%;
+}
+.recherchetool form {
+    width: 98%;
+}
+
+.recherchetool #resultats {
+    z-index: 1000;
+    padding: 5px;
+}
+.recherchetool .resultatsajax:hover {
+    background-color: #ddd;
+
+}
+
+
+/** list on smaller screen ***/
+@media screen and (max-width: 500px) {
+    #resultats {
+        display: none;
+    }
+}

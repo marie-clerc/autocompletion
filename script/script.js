@@ -25,6 +25,7 @@ $(document).ready(function()
                     console.table(dataType);
                     $("#resultats").show();
                     $("#resultats").html(dataType);
+                    $("#resultats").css("background","#FFF");
                     let i = 0;
                     while (i < dataType.length) {
                         $("#resultats").append("<p class='resultatsajax'>" +
