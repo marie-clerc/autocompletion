@@ -29,7 +29,7 @@ $(document).ready(function()
                     let i = 0;
                     while (i < dataType.length) {
                         $("#resultats").append("<p class='resultatsajax'>" +
-                            "<a style='text-decoration: none; color: black; cursor: pointer;' href='element.php?id=" + dataType[i].id + "'><img style='width: 80px; height: auto;' src=" + dataType[i].image + "> " + dataType[i].nom + ", " + dataType[i].artiste + ", " + dataType[i].categorie + "</a></p>");
+                            "<a style='text-decoration: none; color: black; cursor: pointer;' href='element.php?id=" + dataType[i].id + "'><img style='width: 80px; height: auto;' src=" + dataType[i].image + "> " + dataType[i].nom + ", " + dataType[i].artiste + ", " + dataType[i].categorie + ", " + dataType[i].date + ", " + dataType[i].courant + ", " + dataType[i].conservation + "</a></p>");
                         i++;
                     }
                 }
