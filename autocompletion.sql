@@ -32,13 +32,13 @@ USE `autocompletion`;
 DROP TABLE IF EXISTS `oeuvre`;
 CREATE TABLE IF NOT EXISTS `oeuvre` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nom` mediumtext,
-  `artiste` tinytext,
-  `categorie` tinytext,
-  `date` tinytext,
-  `courant` tinytext,
-  `conservation` tinytext,
-  `image` mediumtext,
+  `nom` mediumtext NOT NULL,
+  `artiste` tinytext NOT NULL,
+  `categorie` tinytext NOT NULL,
+  `date` tinytext NOT NULL,
+  `courant` tinytext NOT NULL,
+  `conservation` tinytext NOT NULL,
+  `image` mediumtext NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
 
