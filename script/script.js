@@ -16,7 +16,7 @@ $(document).ready(function()
         else
         {
             $.ajax({
-                type: "GET",
+                method: "GET",
                 dataType: "JSON",
                 url: "classes/encodejson.php",
                 data: 'search=' + $(this).val(),
