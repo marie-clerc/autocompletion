@@ -21,15 +21,15 @@ $(document).ready(function()
                 url: "classes/encodejson.php",
                 data: 'search=' + $(this).val(),
 
-                success: function (dataType) {
-                    console.table(dataType);
+                success: function (data) {
+                    console.table(data);
                     $("#resultats").show();
-                    $("#resultats").html(dataType);
+                    $("#resultats").html(data);
                     $("#resultats").css("background","#FFF");
                     let i = 0;
-                    while (i < dataType.length) {
+                    while (i < data.length) {
                         $("#resultats").append("<p class='resultatsajax'>" +
-                            "<a style='text-decoration: none; color: black; cursor: pointer;' href='element.php?id=" + dataType[i].id + "'><img style='width: 80px; height: auto;' src=" + dataType[i].image + "> " + dataType[i].nom + ", " + dataType[i].artiste + ", " + dataType[i].categorie + ", " + dataType[i].date + ", " + dataType[i].courant + ", " + dataType[i].conservation + "</a></p>");
+                            "<a style='text-decoration: none; color: black; cursor: pointer;' href='element.php?id=" + data[i].id + "'><img style='width: 80px; height: auto;' src=" + data[i].image + "> " + data[i].nom + ", " + data[i].artiste + ", " + data[i].categorie + ", " + data[i].date + ", " + data[i].courant + ", " + data[i].conservation + "</a></p>");
                         i++;
                     }
                 }
